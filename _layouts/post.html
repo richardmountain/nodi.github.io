@@ -1,0 +1,24 @@
+---
+layout: main
+title: Home
+---
+
+<section class="article">
+  <article class="wrap post">
+    <header class="post-header">
+      <hgroup>
+        <h1>{{page.title}}</h1>
+        <p class="date">{{page.date | date: "%b %d, %Y" }}</p>
+        {% if page.total_time %}
+        <p class="total-time">Reading Time: {{page.total_time }}</p>
+        {% endif %}
+        <p class="intro">{% if page.description %}{{ page.description }}{% else %}{{ page.tagline }}{% endif %}</p>
+      </hgroup>
+    </header>
+
+    {{ content }}
+
+  </article>
+
+</section>
+</div>

@@ -1,1 +1,1 @@
-# nodi.me
+# nodi.me - my game developer blog

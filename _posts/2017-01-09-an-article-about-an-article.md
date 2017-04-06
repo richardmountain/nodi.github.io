@@ -2,6 +2,7 @@
 layout: post
 title:  An article about an article
 date:   2017-01-09
+file: blog
 ---
 ## <small>Under new ownership</small>
 The Game Maker Blog is under new ownership as of the end of last year (2016).  Since then, there has been a flurry of articles posted on the blog in efforts to reignite the website.

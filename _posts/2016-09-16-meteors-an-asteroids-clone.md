@@ -2,6 +2,7 @@
 layout: post
 title:  Meteors – an asteroids clone
 date:   2016-09-16
+file: blog
 ---
 ![Meteors - an asteroids clone](/img/posts/asteroids-clone.png){:.img-responsive}
 

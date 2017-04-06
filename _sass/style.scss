@@ -1,4 +1,6 @@
-@import '_vendors/_bootstrap/bootstrap';
-
-@import '_partials/main',
-		'_partials/header';
+@import '_modules/variables',
+		'_modules/mixins',
+		'_partials/main',
+		'_partials/fonts',
+		'_partials/header',
+		'_partials/helpers';

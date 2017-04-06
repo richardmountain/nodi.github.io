@@ -1,0 +1,23 @@
+<nav>
+	<div class="container">
+		<ul>
+			<li {% if page.file == 'index' %} class="active" {% endif %}>
+				<a title="Home" href="/">Home</a>
+			</li>
+			<li {% if page.file == 'games' %} class="active" {% endif %}>
+				<a title="Games" href="#">Games</a>
+				<ul>
+					<li>
+						<a title="Meteors" target="_blank" href="http://play.idevgames.co.uk/game/meteors/">Meteors</a>
+					</li>
+				</ul>
+			</li>
+			<li {% if page.file == 'about' %} class="active" {% endif %}>
+				<a title="About" href="/about.html">About</a>
+			</li>
+		<!-- 	<li {% if page.file == 'blog' %} class="active" {% endif %}>
+				<a title="Blog" href="/blog">Blog</a>
+			</li> -->
+		</ul>
+	</div>
+</nav>

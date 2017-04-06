@@ -4,7 +4,9 @@
 .site-header {
 	.page-title {
 		img {
-			width: 350px;
+			@include bp(sm) {
+				width: 350px;
+			}
 		}
 	}
 }

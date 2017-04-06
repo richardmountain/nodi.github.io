@@ -2,6 +2,7 @@
 layout: post
 title:  Movement script, Basic GameMaker Movement Script
 date:   2016-12-08
+file: blog
 ---
 
 ## <small>Basic Movement Guide</small>

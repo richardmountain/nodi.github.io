@@ -1,6 +1,7 @@
 ---
 layout: main
 title: Home
+file: index
 ---
 
 <section>

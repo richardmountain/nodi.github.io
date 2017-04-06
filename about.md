@@ -1,6 +1,7 @@
 ---
 layout: main
 title: About me
+file: about
 ---
 
 ![Image of Richard Mountain](/img/me.jpg){:.img-responsive}

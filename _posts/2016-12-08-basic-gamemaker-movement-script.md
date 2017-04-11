@@ -3,6 +3,9 @@ layout: post
 title:  Movement script, Basic GameMaker Movement Script
 date:   2016-12-08
 file: blog
+image:
+  feature: /img/posts/default_post.jpg
+  class: default-post
 ---
 
 ## <small>Basic Movement Guide</small>

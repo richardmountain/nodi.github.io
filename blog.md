@@ -1,13 +1,13 @@
 ---
 layout: main
-title: Home
-file: index
+title: Blog
+file: blog
 ---
 
-The words of a Indie Game Developer. [More about No Dime Games]({{ site.url }}/about.html).
-
 {:.title}
-## Latest Posts
+## My Blog
+
+Hey this page looks alot like the home page, whats going on?
 
 <div class="group">
 {% for post in site.posts %}

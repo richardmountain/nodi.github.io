@@ -15,7 +15,7 @@ title: Home
         <p class="intro">{% if page.description %}{{ page.description }}{% else %}{{ page.tagline }}{% endif %}</p>
       </hgroup>
     </header>
-
+    <img title="{{ page.title }}" alt="{{ page.title }}" src="{{ page.image.feature }}">
     {{ content }}
 
   </article>

@@ -1,11 +1,27 @@
-// body {
-// 	font-size: 16px;
-// }
+p {
+	font-family: 'robotoslim', Arial, sans-serif;
+	font-size: 16px;
+	margin-bottom: ($padding + 5);
+}
 
-// article {
-// 	margin-top: 50px;
-// }
+a {
+    color: $link-color;
+    text-decoration: none;
+}
 
-// p {
-// 	padding-bottom: 15px;
-// }
+.container {
+	margin: auto;
+	padding: 0 15px;
+
+	@include bp(sm) {
+		width: ($bp-tablet - ($padding * 2));
+	}
+
+	@include bp(md) {
+		width: ($bp-desktop - ($padding * 2));
+	}
+
+	@include bp(lg) {
+		width: ($bp-large-desktop - ($padding * 2));
+	}
+}

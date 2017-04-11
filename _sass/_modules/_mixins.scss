@@ -15,7 +15,11 @@
     @media (min-width: 1200px) { @content; }
   }
  
+   @else if $class == smmd {
+    @media (min-width: $bp-tablet) and (max-width: $bp-desktop) { @content; }
+  }
+
   @else {
-    @warn "Breakpoint mixin supports: xs, sm, md, lg";
+    @warn "Breakpoint mixin supports: xs, sm, md, lg,smmd";
   }
 }

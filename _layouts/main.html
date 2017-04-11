@@ -14,14 +14,20 @@
             
             @font-face {
                 font-family: 'robotoregular';
-                src: url("../fonts/Roboto-Regular-webfont.eot");
-                src: url("../fonts/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular-webfont.woff") format("woff"), url("../fonts/Roboto-Regular-webfont.ttf") format("truetype"), url("../fonts/Roboto-Regular-webfont.svg#robotoregular") format("svg");
+                src: url("/fonts/Roboto-Regular-webfont.eot");
+                src: url("/fonts/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/Roboto-Regular-webfont.woff") format("woff"), url("/fonts/Roboto-Regular-webfont.ttf") format("truetype"), url("/fonts/Roboto-Regular-webfont.svg#robotoregular") format("svg");
                 font-weight: normal;
                 font-style: normal; }
             @font-face {
                 font-family: 'robotoblack';
-                src: url("../fonts/Roboto-Black-webfont.eot");
-                src: url("../fonts/Roboto-Black-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Black-webfont.woff") format("woff"), url("../fonts/Roboto-Black-webfont.ttf") format("truetype"), url("../fonts/Roboto-Black-webfont.svg#robotoregular") format("svg");
+                src: url("/fonts/Roboto-Black-webfont.eot");
+                src: url("/fonts/Roboto-Black-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/Roboto-Black-webfont.woff") format("woff"), url("/fonts/Roboto-Black-webfont.ttf") format("truetype"), url("/fonts/Roboto-Black-webfont.svg#robotoregular") format("svg");
+                font-weight: normal;
+                font-style: normal; }
+            @font-face {
+                font-family: 'robotoslim';
+                src: url("/fonts/RobotoCondensed-Regular-webfont.eot");
+                src: url("/fonts/RobotoCondensed-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/RobotoCondensed-Regular-webfont.woff") format("woff"), url("/fonts/RobotoCondensed-Regular-webfont.ttf") format("truetype"), url("/fonts/RobotoCondensed-Regular-webfont.svg#robotoregular") format("svg");
                 font-weight: normal;
                 font-style: normal; }
             
@@ -33,39 +39,28 @@
                 padding: 0;
             }
 
-            body {
-                color: rgba(60,67,85, 1);
+            html, 
+            body,
+            .site-header,
+            .jumbotron {
+                height: 100%;
                 font-family: 'robotoregular', Arial, sans-serif;
                 font-size: 14px;
             }
+
+            body {
+                color: rgba(60,67,85, 1);
+            }
             
-            a {
-                color: rgba(115, 190, 198, 1);
+            .img-responsive {
+                height: auto;
+                width: 100%; 
             }
 
-            article {
-                margin-bottom: 45px;
-            }
-
-            article h1 {
-                border-bottom: 1px solid rgba(60,67,85, 1);
-                line-height: 38px;
-                padding-bottom: 15px;
-                margin-bottom: 20px;
-            }
-
-            h1 {
-                color: rgba(115, 190, 198, 1);
-                font-size: 36px;
-            }
-
-            h1 a {
-                color: rgba(115, 190, 198, 1);
-                text-decoration: none;
-            }
-
-            h2 small {
-                color: rgba(211,90,76,1);
+            .jumbotron {
+                text-align: center;
+                color: inherit;
+                background-color: #eee;
             }
 
             nav {
@@ -106,49 +101,16 @@
             nav ul li.active a {
                 color: white;
             }
-
-            nav ul ul {
-                display: none;
-            }
-
-            p {
-                margin-bottom: 25px;
-            }
-    
-            @media (min-width: 768px) {
-                section {
-                    padding-top: 50px;
-                }
-            }
-
-            .container {
-                margin: auto;
-                padding: 0 15px;
-                width: 100%;
+            .site-header .page-title {
+                position: absolute;
+                left: 50%;
+                margin-left: -175px;
+                bottom: 50%;
+                margin-bottom: -95px;
             }
 
             @media (min-width: 768px) {
-                .container {
-                    width: 738px;
-                }
-            }
-
-            .jumbotron {
-                text-align: center;
-                padding-top: 30px;
-                padding-bottom: 30px;
-                margin-bottom: 30px;
-                color: inherit;
-                background-color: #eee;
-            }
-
-            .img-responsive {
-                height: auto;
-                width: 100%; 
-            }
-
-            @media (min-width: 768px) {
-                .site-header .page-title img {
+                .site-header .page-title img{
                     width: 350px; 
                 }
             }
@@ -156,8 +118,7 @@
         </style>
 
     </head>
-    <body>
-        {% include navigation.html %}
+    <body class="{{ page.file }}">
         {% include header.html %}
 
         <div class="container">

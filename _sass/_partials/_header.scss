@@ -2,6 +2,7 @@
  * Header
  */
 .site-header {
+	margin-bottom: ($padding * 2);
 	.page-title {
 		img {
 			@include bp(sm) {

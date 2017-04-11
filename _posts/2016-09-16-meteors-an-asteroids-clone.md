@@ -3,8 +3,9 @@ layout: post
 title:  Meteors – an asteroids clone
 date:   2016-09-16
 file: blog
+image:
+  feature: /img/posts/asteroids-clone.png
 ---
-![Meteors - an asteroids clone](/img/posts/asteroids-clone.png){:.img-responsive}
 
 So since I’ve decided to start developing games, I figured it might be a good idea to post at least one game on my new site for people to see and possibly play.
 <!--more-->
